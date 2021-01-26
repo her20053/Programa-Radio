@@ -70,7 +70,16 @@ public class Controlador{
     }
 }
 
-class ModuloRadio{
+interface RadioInterface {
+
+    public int continuar();
+    public int retroceder();
+    public void aumentarEmisoraActual(boolean AM);
+
+}
+
+
+class ModuloRadio implements RadioInterface{
 
     private boolean estadoRadio = false;
     private boolean emisoraRadio = true; // True - AM ; False - FM
@@ -107,7 +116,8 @@ class ModuloRadio{
     void establecerPuntoFM(int pos){
         this.emisoraFMActual = pos;
     }
-    void aumentarEmisoraActual(boolean AM){
+    public void aumentarEmisoraActual(boolean AM){
+
         if(AM){
             if(emisoraAMActual == 9){
                 emisoraAMActual = 0;
@@ -118,6 +128,19 @@ class ModuloRadio{
                 emisoraFMActual = 0;
             } else { emisoraFMActual++; }
         }
+
+    }
+
+    @Override
+    public int continuar() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public int retroceder() {
+        // TODO Auto-generated method stub
+        return 0;
     }
 
 }
