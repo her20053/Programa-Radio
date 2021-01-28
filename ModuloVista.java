@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/**
+ * Clase de Vista encargada de la interaccion con el usuario
+ * Es utilizada
+ * @author (Jose Hernandez, Javier Alvarez)
+ */
 public class ModuloVista{
     // Se inicializa la clase Scanner con el nombre sc (System.in) para retraer informacion del usuario:
     private Scanner sc = new Scanner(System.in);

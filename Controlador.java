@@ -1,6 +1,11 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Clase Controlador utilizada para el funcionamiento de la radio
+ * Es utilizada
+ * @author (Jose Hernandez, Javier Alvarez)
+ */
 public class Controlador{
 
     /**
